@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.cnt_of_question {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+tr,
+td,
+th {
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid black;
+}
+
+td {
+    padding: 1rem;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #efeeef;
+    border-radius: 2rem;
+}
+
+progress::-webkit-progress-value {
+    background-color: #5cb668;
+    border-radius: 2rem;
+}
+
+
+/* loader start */
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #21396a;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* loader end */
+
+.btn {
+    box-shadow: 0 1px 1px rgb(45 45 45 / 5%), 0 2px 2px rgb(49 49 49 / 5%), 0 6px 6px rgb(42 42 42 / 5%), 0 12px 12px rgb(32 32 32 / 5%);
+    transform: translateY(-2px);
+}
+
+button {
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out, opacity 0.2s ease-out;
+}
